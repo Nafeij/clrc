@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/clrc/static/js/main.a965313a.js",
+    "index.html": "/clrc/index.html",
+    "main.a965313a.js.map": "/clrc/static/js/main.a965313a.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a965313a.js"
+  ]
+}
