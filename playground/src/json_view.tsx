@@ -16,8 +16,8 @@ const Style = styled.div`
 const Wrapper = ({ lrc }: { lrc: string }) => {
   const deferedLrc = useDeferredValue(lrc);
   const parsed = useMemo(() => parse(deferedLrc), [deferedLrc]).sort((a,b)=>{
-    const keyA = a.type === LineType.LYRIC || a.type === LineType.LYRIC_EXT  ? (a as LyricLine).startMillisecond : 0;
-    const keyB = b.type === LineType.LYRIC || b.type === LineType.LYRIC_EXT ? (b as LyricLine).startMillisecond : 0;
+    const keyA = a.type === LineType.LYRIC  ? (a as LyricLine).startMillisecond : 0;
+    const keyB = b.type === LineType.LYRIC ? (b as LyricLine).startMillisecond : 0;
     return keyA - keyB;
   });
 
