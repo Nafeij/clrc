@@ -1,7 +1,7 @@
 import { useMemo, useDeferredValue } from 'react';
 import styled from 'styled-components';
 import JsonView from 'react-json-view';
-import { LineType, LyricLine, parse } from 'clrc';
+import { parse, LineType, LyricLine } from 'clrc';
 
 const Style = styled.div`
   padding: 10px;
